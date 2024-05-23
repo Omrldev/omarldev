@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins, Rubik } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({ 
   subsets: ['latin'],
@@ -15,7 +17,7 @@ const rubik = Rubik ({
 });
 
 export const metadata: Metadata = {
-  title: "Personal website",
+  title: "Omar Ledesma | Front-end Developer",
   description: "Modern profile website",
 };
 
@@ -26,7 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.variable}>{children}</body>
+      <body>
+        <Header/>
+        <main className={poppins.variable}>
+          {children}
+        </main>
+        <Footer/>
+      </body>
     </html>
   );
 }

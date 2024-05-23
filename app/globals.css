@@ -18,6 +18,17 @@
 
 body {
   font-family: var(--font-poppins);
+  font-family: var(--font-rubik);
+}
+
+@layer utilities {
+  .flex-between {
+    @apply flex justify-between items-center
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center
+  }
 }
 
 
