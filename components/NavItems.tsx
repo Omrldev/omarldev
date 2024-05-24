@@ -1,12 +1,13 @@
 import { headerLinks } from "@/constants/Index";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const NavItems = () => {
   const pathname = usePathname();
 
   return (
-    <ul className="hidden md:flex-center w-full max-w-sm gap-10">
+    <ul className="hidden md:flex-center flex-col w-full max-w-sm gap-10 md:flex-row">
       {headerLinks.map((link) => {
         const isActive = pathname === link.route;
 
