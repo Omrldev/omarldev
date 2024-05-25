@@ -8,7 +8,7 @@ import MobileNav from "./MobileNav";
 const Header = () => {
 
   return (
-    <header className="w-full border-b">
+    <header className="w-full border-b absolute z-10 bg-white shadow-md">
       <div className="max-w-7xl p-5 mx-auto xl:px-0 flex-between">
         <Link href="/" className="font-rubik">Omar.dev</Link>
 

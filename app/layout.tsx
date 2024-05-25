@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header/>
-        <main className={poppins.variable}>{children}</main>
+        <main className={`${poppins.variable} relative`}>{children}</main>
         <Footer/>
       </body>
     </html>
