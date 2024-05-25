@@ -17,21 +17,17 @@ const MobileNav = () => {
         <IoMdMenu onClick={openNav} className="cursor-pointer"></IoMdMenu>
       </div>
 
-      <div className={
-        `fixed bg-white flex justify-center items-center flex-col w-full h-screen top-0 left-[-100%]
-        ${ menu ? "left-0" : ""}`
+      <div className={ menu
+        ? "fixed bg-white inset-0 w-full max-h-screen"
+        : "fixed left-[-100%]"
         }>
-          <div  onClick={openNav} className="absolute cursor-pointerl">
+          <div  onClick={openNav} className="border-2 cursor-pointer flex-center mt-8">
             <IoMdClose></IoMdClose>
           </div>
 
-          <ul className="flex flex-col">
-            {headerLinks.map((link) => (
-              <Link onClick={openNav} href={link.route}>
-                {link.label}
-              </Link>
-            ))}
-          </ul>
+          <div onClick={openNav} className="border-2 mt-10">
+            <NavItems />
+          </div>
       </div>
     </nav>
   );

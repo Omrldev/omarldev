@@ -10,11 +10,11 @@ const Header = () => {
   return (
     <header className="w-full border-b">
       <div className="max-w-7xl p-5 mx-auto xl:px-0 flex-between">
-        <Link href="/">Omar.dev</Link>
+        <Link href="/" className="font-rubik">Omar.dev</Link>
 
-        <NavItems/>
+        <NavItems />
        
-        <MobileNav/>
+        <MobileNav />
       </div>
     </header>
   );
