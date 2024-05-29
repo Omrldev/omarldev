@@ -1,8 +1,8 @@
 {/**Header links */}
 export const headerLinks = [
-    { route: '/', label: 'Home'},
-    { route: '#about', label:'About' },
-    { route: '#projects', label: 'Projects'},
-    { route: '#contact', label: 'Contact'}
+    { route: '/', label: 'Inicio'},
+    { route: '#about', label:'Sobre mi' },
+    { route: '#projects', label: 'Proyectos'},
+    { route: '#contact', label: 'Contacto'}
 ];
 

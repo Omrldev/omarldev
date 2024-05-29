@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <section
       id="#home"
-      className="w-full bg-gray-50 h-screen border-blue-500 border-2"
+      className="w-full bg-gray-50 h-screen"
     >
-      <div className="border-red-500 border-2 flex-1 pt-20">
+      <div className="flex-1 pt-20">
         <Image
           src="/assets/images/hero.png"
           alt="hero"

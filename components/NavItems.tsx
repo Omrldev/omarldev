@@ -6,7 +6,7 @@ const NavItems = () => {
   const pathname = usePathname();
 
   return (
-    <ul className="md:flex-center flex-col w-full gap-20 md:flex-row border-2 max-md:hidden">
+    <ul className="flex-col w-full gap-8 flex md:flex-row">
       {headerLinks.map((link) => {
         const isActive = pathname === link.route;
         return (
